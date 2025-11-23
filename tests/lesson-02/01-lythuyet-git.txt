@@ -1,0 +1,5 @@
+GIẢI THÍCH Ý NGHĨA CÁC CÂU LỆNH:
+git init : Khởi tạo repo tại vùng Local
+git add <file_name> : Thêm các files được liệt kê trong <file_name> sang vùng Staging 
+git add . : Thêm tất cả các files còn lại trong vùng Local sang vùng Staging
+git commit -m “message” : Tạo 1 phiên bản với tên "message" tại vùng Repository từ các files đang có ở vùng Staging

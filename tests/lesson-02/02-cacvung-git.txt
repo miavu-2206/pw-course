@@ -1,0 +1,41 @@
+Hãy liệt kê các file theo từng vùng sau khi thao tác một loạt các lệnh sau
+a. Tạo 3 file: file1, file2, file3
+Folder   |
+file1    |
+file2    |
+file3    |
+
+b. Chạy lệnh: git init : Khởi tạo repo gồm 3 files: file1.txt, file2.txt, file3.txt tại vùng Local
+Working Directory   |   Staing    | Repository
+file1               |             |
+file2               |             |
+file3               |             |
+
+c. Chạy lệnh: git commit -m”init project”: Báo lỗi: pathspec 'file1”' did not match any file(s) known to git 
+Working Directory   |   Staing    | Repository
+file1               |             |
+file2               |             |
+file3               |             |
+
+d. Chạy lệnh: git add file1 : Thêm file1.txt vào vùng Staging
+Working Directory   |   Staing    | Repository
+file1               |   file1     |
+file2               |             |
+file3               |             |
+
+e. Chạy lệnh: git commit -m”add file1” : Tạo 1 phiên bản với tên "add file1" trong vùng Repository
+Working Directory   |   Staing    | Repository
+file1               |   file1     |  file1
+file2               |             |
+file3               |             |
+
+f. Chạy lệnh: git commit -m”add file” : báo lỗi: On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)      
+        file2.txt
+        file3.txt
+nothing added to commit but untracked files present (use "git add" to track)
+Working Directory   |   Staing    | Repository
+file1               |   file1     |  file1
+file2               |             |
+file3               |             |
